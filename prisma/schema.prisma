@@ -16,3 +16,17 @@ model Task {
   description String?
   createdAT   DateTime @default(now())
 }
+
+model user {
+  id        Int      @id @default(autoincrement())
+  name      String
+  lastname  String?
+  createdAT DateTime @default(now())
+}
+
+model curso {
+  id          Int      @id @default(autoincrement())
+  name        String
+  description String?
+  createdAT   DateTime @default(now())
+}
